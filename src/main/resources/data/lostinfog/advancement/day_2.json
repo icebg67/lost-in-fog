@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "minecraft:lily_of_the_valley"
+    },
+    "title": {
+      "translate": "advancements.day_2.title"
+    },
+    "description": {
+      "translate": "advancements.day_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "day_2_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

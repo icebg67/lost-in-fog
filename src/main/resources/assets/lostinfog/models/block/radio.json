@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/ratio",
+  "textures": {
+    "all": "lostinfog:block/ratiotexture",
+    "particle": "lostinfog:block/ratiotexture",
+    "1": "lostinfog:block/ratiotexture"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "lostinfog:custom/kaseta",
+  "textures": {
+    "0": "lostinfog:block/kasete",
+    "particle": "minecraft:item/cocoa_beans"
+  }
+}

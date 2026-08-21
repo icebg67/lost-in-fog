@@ -1,0 +1,402 @@
+{
+  "flashlight_off": {
+    "sounds": [
+      {
+        "name": "lostinfog:flashlight_off",
+        "stream": false
+      }
+    ]
+  },
+  "flashlight_on": {
+    "sounds": [
+      {
+        "name": "lostinfog:flashlight_on",
+        "stream": false
+      }
+    ]
+  },
+  "stukdoor": {
+    "sounds": [
+      {
+        "name": "lostinfog:door-knock-bedroom-1_zj6tgzvd_1",
+        "stream": false
+      }
+    ]
+  },
+  "stukokno": {
+    "sounds": [
+      {
+        "name": "lostinfog:door-knock-5_fksfgzed-_1__1",
+        "stream": false
+      }
+    ]
+  },
+  "mainmenu": {
+    "sounds": [
+      {
+        "name": "lostinfog:mainmenu",
+        "stream": false
+      }
+    ]
+  },
+  "startgame": {
+    "sounds": [
+      {
+        "name": "lostinfog:startgame",
+        "stream": false
+      }
+    ]
+  },
+  "tvvikl": {
+    "sounds": [
+      {
+        "name": "lostinfog:tvvikl_1",
+        "stream": false
+      }
+    ]
+  },
+  "tvvkl": {
+    "sounds": [
+      {
+        "name": "lostinfog:tvvkl_1",
+        "stream": false
+      }
+    ]
+  },
+  "vhs": {
+    "sounds": [
+      {
+        "name": "lostinfog:whitt_1",
+        "stream": false
+      }
+    ]
+  },
+  "flashlighton": {
+    "sounds": [
+      {
+        "name": "lostinfog:flashlight_on",
+        "stream": false
+      }
+    ]
+  },
+  "flashlightoff": {
+    "sounds": [
+      {
+        "name": "lostinfog:flashlight_off",
+        "stream": false
+      }
+    ]
+  },
+  "startgameshelk": {
+    "sounds": [
+      {
+        "name": "lostinfog:startgameshelk",
+        "stream": false
+      }
+    ]
+  },
+  "scream": {
+    "sounds": [
+      {
+        "name": "lostinfog:aaah",
+        "stream": false
+      }
+    ]
+  },
+  "ambient": {
+    "sounds": [
+      {
+        "name": "lostinfog:0add203edfc3791_1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:1f7e41b8-d8a9-4ecb-ba62-a737ce94791b",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:3b17c33f-456d-4bee-a6f9-588400717716",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:4eac6844-0e41-4d07-a900-89c1140b9a67",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:6efd06ae-85e6-4418-b77b-8cd5f40f3798",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:9f404397-72e5-4af3-8217-ef4da31e4847",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:18e034a1-86bb-4b01-bc7f-acfb61f2abcc",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:36d740d0-d9ef-408f-927c-1957239cdae3",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:70fb6a6f-5f8a-4816-bf91-729c1bc80ef3",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:79d95b8d-6396-4a50-b60c-53825a43c3fd",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:85d11a53-8052-4806-98be-be1616c42eca",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:685e6e3e-6900-47bb-9ec8-d21b8b223848",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:07390e58-9f31-46e5-8423-4b30e37d1d66",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:7727cb55-1b57-4a11-8dd8-13619b70a30f",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:b9bd4d9c-8fbc-4cc6-871d-4733378c1056",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:b19764c7-3332-4fda-8cf8-2f158b321cd1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:da3ea812-f691-47b2-9e07-5ef3ddbb37e2",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:e090598c-5697-4804-81c3-3e90cfa042aa",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:e0799423abeee07_1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:glitch_1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:glitch2_1",
+        "stream": false
+      }
+    ]
+  },
+  "event3": {
+    "sounds": [
+      {
+        "name": "lostinfog:dragon-studio-glitch-effect-1-397982-_mp3cut.net_",
+        "stream": false
+      }
+    ]
+  },
+  "itsme": {
+    "sounds": [
+      {
+        "name": "lostinfog:itsme",
+        "stream": false
+      }
+    ]
+  },
+  "sarah": {
+    "sounds": [
+      {
+        "name": "lostinfog:baf8074c-179c-410d-8849-c5fb7d23fdb2",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:e7096cbb-ab6b-40a5-b6dd-b85cbe4db3be",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:76d1a437-1ba4-4cc8-b9e4-9f0cd93354b3",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:sarah",
+        "stream": false
+      }
+    ]
+  },
+  "tabletka": {
+    "sounds": [
+      {
+        "name": "lostinfog:872621e90782f88",
+        "stream": false
+      }
+    ]
+  },
+  "corner": {
+    "sounds": [
+      {
+        "name": "lostinfog:freesounds123-jumpscare-v3-335600_1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:freesound_community-explosion-ambiance-45472_1",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:freesound_community-breath-stinger1-96164",
+        "stream": false
+      }
+    ]
+  },
+  "thefog": {
+    "sounds": [
+      {
+        "name": "lostinfog:freesound_community-scary-wood-74661_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "attack": {
+    "sounds": [
+      {
+        "name": "lostinfog:freesound_community-jumpscare-68730",
+        "stream": false
+      }
+    ]
+  },
+  "khekhe": {
+    "sounds": [
+      {
+        "name": "lostinfog:male-cough_m1naqjeo",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:cough_z1wfnj4d",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:jg-032316-sfx-coughing-male",
+        "stream": false
+      },
+      {
+        "name": "lostinfog:zvuk-kashlja",
+        "stream": false
+      }
+    ]
+  },
+  "forest": {
+    "sounds": [
+      {
+        "name": "lostinfog:freesound_community-forest-rain-atmo-fantasy-14435_mp3cut.net_2",
+        "stream": false
+      }
+    ]
+  },
+  "rad": {
+    "sounds": [
+      {
+        "name": "lostinfog:zvuk-radiopomeh-_mp3cut.net_",
+        "stream": false
+      }
+    ]
+  },
+  "radiosound": {
+    "sounds": [
+      {
+        "name": "lostinfog:255e6544-21e9-4157-8aff-b972fa3acf23",
+        "stream": false
+      }
+    ]
+  },
+  "radiovhs": {
+    "sounds": [
+      {
+        "name": "lostinfog:zvuk-shuma-radio_1_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "startsoundvideo": {
+    "sounds": [
+      {
+        "name": "lostinfog:pornovideojava_audio-extractor.net",
+        "stream": false
+      }
+    ]
+  },
+  "day1": {
+    "sounds": [
+      {
+        "name": "lostinfog:day1",
+        "stream": false
+      }
+    ]
+  },
+  "day2": {
+    "sounds": [
+      {
+        "name": "lostinfog:day2",
+        "stream": false
+      }
+    ]
+  },
+  "day3": {
+    "sounds": [
+      {
+        "name": "lostinfog:day3",
+        "stream": false
+      }
+    ]
+  },
+  "day4": {
+    "sounds": [
+      {
+        "name": "lostinfog:day4",
+        "stream": false
+      }
+    ]
+  },
+  "day5": {
+    "sounds": [
+      {
+        "name": "lostinfog:day5",
+        "stream": false
+      }
+    ]
+  },
+  "ambientbunker": {
+    "sounds": [
+      {
+        "name": "lostinfog:freesound_community-the-bunker-piano-i-67401_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "death1": {
+    "sounds": [
+      {
+        "name": "lostinfog:death1",
+        "stream": false
+      }
+    ]
+  },
+  "death2": {
+    "sounds": [
+      {
+        "name": "lostinfog:death2",
+        "stream": false
+      }
+    ]
+  },
+  "day6": {
+    "sounds": [
+      {
+        "name": "lostinfog:day6",
+        "stream": false
+      }
+    ]
+  }
+}

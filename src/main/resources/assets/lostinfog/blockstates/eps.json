@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/eps"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/eps",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/eps",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/eps",
+      "y": 270
+    }
+  }
+}

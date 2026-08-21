@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/joefix",
+  "textures": {
+    "all": "lostinfog:block/fotor-2026080716847",
+    "particle": "lostinfog:block/fotor-2026080716847",
+    "0": "lostinfog:block/fotor-2026080716847"
+  },
+  "render_type": "solid"
+}

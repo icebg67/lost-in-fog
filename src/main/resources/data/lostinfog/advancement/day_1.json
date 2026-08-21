@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "lostinfog:tvoff"
+    },
+    "title": {
+      "translate": "advancements.day_1.title"
+    },
+    "description": {
+      "translate": "advancements.day_1.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "day_1_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "lostinfog:day_2"
+}

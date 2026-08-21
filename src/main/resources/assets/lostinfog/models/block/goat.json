@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/bibi",
+  "textures": {
+    "all": "lostinfog:block/fotor-20260815214437",
+    "particle": "lostinfog:block/fotor-20260815214437",
+    "0": "lostinfog:block/fotor-20260815214437"
+  },
+  "render_type": "solid"
+}

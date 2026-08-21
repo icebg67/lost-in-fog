@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Not specified"
+
+[[mods]]
+modId="lostinfog"
+version="0.0.5"
+displayName="lost in fog"
+displayURL="https://www.patreon.com/c/flyover67"
+logoFile="logo.png"
+credits="Author: FLYover67. Testing: toxa2boy"
+authors="FLYover67"
+description="The fog is coming. 4:23 PM, June 26, 2026. Point of origin: 26.395348193316\u00B0 N, -144.778567450876\u00B0 W. Expansion rate: 5.3x10^8 meters "
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.lostinfog]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.lostinfog]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+
+[[dependencies.lostinfog]]
+modId="geckolib"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+
+
+# Start of user code block dependencies configuration
+[[dependencies.lostinfog]]
+modId="ffmpeglib"
+type="required"
+versionRange="[0.6.7,)"
+ordering="AFTER"
+side="BOTH"
+# End of user code block dependencies configuration

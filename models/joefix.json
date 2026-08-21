@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "fotor-2026080715417",
+		"particle": "fotor-2026080715417"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 15.75],
+			"to": [15, 15, 16],
+			"rotation": {"angle": 0, "axis": "z", "origin": [15, -2, 15]},
+			"faces": {
+				"north": {"uv": [0.35938, 0.35938, 4.75, 3.73437], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [2.53125, 10.70313, 14.53125, 10.95313], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [6.14063, 8.125, 16, 16], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [2.71875, 11.20313, 14.71875, 11.45313], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8.46875, 2, 8.71875, 16], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [12.76563, 0.45313, 13.01563, 14.45313], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/mail",
+  "textures": {
+    "all": "lostinfog:block/tew2",
+    "particle": "lostinfog:block/tew2",
+    "0": "lostinfog:block/tew2"
+  },
+  "render_type": "solid"
+}

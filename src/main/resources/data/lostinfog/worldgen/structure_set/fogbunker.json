@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lostinfog:fogbunker",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 35,
+    "separation": 34,
+    "salt": 1782283695
+  }
+}

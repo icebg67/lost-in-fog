@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/palka"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/palka",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/palka",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/palka",
+      "y": 270
+    }
+  }
+}

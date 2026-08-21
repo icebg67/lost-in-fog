@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "lostinfog:fog_forest_biom",
+  "features": "lostinfog:palkka",
+  "step": "vegetal_decoration"
+}

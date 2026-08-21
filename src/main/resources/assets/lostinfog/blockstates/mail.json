@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/mail"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/mail",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/mail",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/mail",
+      "y": 270
+    }
+  }
+}

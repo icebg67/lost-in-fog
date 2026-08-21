@@ -1,0 +1,7 @@
+{
+  "parent": "lostinfog:custom/pils",
+  "textures": {
+    "0": "lostinfog:block/pills",
+    "particle": "lostinfog:item/pills"
+  }
+}

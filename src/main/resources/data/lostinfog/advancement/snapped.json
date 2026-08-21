@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "lostinfog:cassette"
+    },
+    "title": {
+      "translate": "advancements.snapped.title"
+    },
+    "description": {
+      "translate": "advancements.snapped.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "snapped_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "lostinfog:day_2"
+}

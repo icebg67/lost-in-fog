@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/palka",
+  "textures": {
+    "all": "lostinfog:block/palka",
+    "particle": "lostinfog:block/palka",
+    "0": "lostinfog:block/palka"
+  },
+  "render_type": "solid"
+}

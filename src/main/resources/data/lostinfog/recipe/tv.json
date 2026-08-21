@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_nugget"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    },
+    "d": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "result": {
+    "id": "lostinfog:tvoff",
+    "count": 1
+  }
+}

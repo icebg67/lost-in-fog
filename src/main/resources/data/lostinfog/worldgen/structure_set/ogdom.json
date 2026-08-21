@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lostinfog:ogdom",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 24,
+    "separation": 16,
+    "salt": 508030926
+  }
+}

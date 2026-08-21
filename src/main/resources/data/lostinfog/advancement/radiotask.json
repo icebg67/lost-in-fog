@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "lostinfog:radio"
+    },
+    "title": {
+      "translate": "advancements.radiotask.title"
+    },
+    "description": {
+      "translate": "advancements.radiotask.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "radiotask_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "lostinfog:day_2"
+}

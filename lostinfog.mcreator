@@ -1,0 +1,1912 @@
+{
+  "mod_elements": [
+    {
+      "name": "Tvoff",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tvoff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/blockstates/tvoff.json",
+          "src/main/java/net/mcreator/lostinfog/block/TvoffBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/tvoff.json",
+          "src/main/resources/assets/lostinfog/models/block/tvoff.json",
+          "src/main/resources/assets/lostinfog/models/item/tvoff.json"
+        ]
+      }
+    },
+    {
+      "name": "Tvon",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tvon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/block/tvon.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/tvon.json",
+          "src/main/resources/assets/lostinfog/blockstates/tvon.json",
+          "src/main/java/net/mcreator/lostinfog/block/TvonBlock.java",
+          "src/main/resources/assets/lostinfog/models/item/tvon.json"
+        ]
+      }
+    },
+    {
+      "name": "Tvinteract",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tvinteract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/Tvinteract.java"
+        ]
+      }
+    },
+    {
+      "name": "Thefog",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thefog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/client/renderer/ThefogRenderer.java",
+          "src/main/java/net/mcreator/lostinfog/entity/ThefogEntity.java",
+          "src/main/java/net/mcreator/lostinfog/entity/model/ThefogModel.java",
+          "src/main/resources/assets/lostinfog/models/item/thefog_spawn_egg.json",
+          "src/main/resources/data/lostinfog/neoforge/biome_modifier/thefog_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "TheFogForest",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_fog_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/dimension_type/the_fog_forest.json",
+          "src/main/resources/data/lostinfog/dimension/the_fog_forest.json",
+          "src/main/java/net/mcreator/lostinfog/world/dimension/TheFogForestDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "FogForestBiom",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_forest_biom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/placed_feature/fog_forest_biom_tree.json",
+          "src/main/resources/data/lostinfog/worldgen/biome/fog_forest_biom.json",
+          "src/main/resources/data/lostinfog/worldgen/configured_feature/fog_forest_biom_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "VideoMenu",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "video_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/VideoMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Mail",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/MailBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/mail.json",
+          "src/main/resources/assets/lostinfog/blockstates/mail.json",
+          "src/main/java/net/mcreator/lostinfog/block/entity/MailBlockEntity.java",
+          "src/main/resources/assets/lostinfog/models/item/mail.json",
+          "src/main/resources/assets/lostinfog/models/block/mail.json"
+        ]
+      }
+    },
+    {
+      "name": "House",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/structure_set/house.json",
+          "src/main/resources/data/lostinfog/worldgen/template_pool/house.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/house.json"
+        ]
+      }
+    },
+    {
+      "name": "StartSpawnHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "start_spawn_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/StartSpawnHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "IntroEventHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "intro_event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/IntroEventHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Letter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "letter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/item/LetterItem.java",
+          "src/main/resources/assets/lostinfog/models/item/letter.json"
+        ]
+      }
+    },
+    {
+      "name": "ClientHooks",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "client_hooks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/ClientHooks.java"
+        ]
+      }
+    },
+    {
+      "name": "LetterScreen",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "letter_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LetterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "CameraEventHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camera_event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/CameraEventHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Day2",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Day3",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_3.json"
+        ]
+      }
+    },
+    {
+      "name": "Day4",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_4.json"
+        ]
+      }
+    },
+    {
+      "name": "Day5",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_5.json"
+        ]
+      }
+    },
+    {
+      "name": "Day1",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Chest",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/world/inventory/ChestMenu.java",
+          "src/main/java/net/mcreator/lostinfog/client/gui/ChestScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Pills",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pills",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/pills.json",
+          "src/main/java/net/mcreator/lostinfog/item/PillsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MainMenuSoundHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "main_menu_sound_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/MainMenuSoundHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "TvVhsLoopClient",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tv_vhs_loop_client",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/TvVhsLoopClient.java"
+        ]
+      }
+    },
+    {
+      "name": "TvHudHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tv_hud_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/TvHudHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "David",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "david",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/david_spawn_egg.json",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/DavidRenderer.java",
+          "src/main/java/net/mcreator/lostinfog/entity/DavidEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Glitch",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glitch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/glitch_spawn_egg.json",
+          "src/main/java/net/mcreator/lostinfog/entity/GlitchEntity.java",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/GlitchRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogClientMod",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_client_mod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogClientMod.java"
+        ]
+      }
+    },
+    {
+      "name": "Tv",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/recipe/tv.json"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogAnomalies",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_anomalies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogAnomalies.java"
+        ]
+      }
+    },
+    {
+      "name": "Cassette",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cassette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/item/CassetteItem.java",
+          "src/main/resources/assets/lostinfog/models/item/cassette.json"
+        ]
+      }
+    },
+    {
+      "name": "Ogdom",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ogdom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/ogdom.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/ogdom.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/ogdom.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerCensorScript",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "player_censor_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/PlayerCensorScript.java"
+        ]
+      }
+    },
+    {
+      "name": "CameraHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camera_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/CameraHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Watcher",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watcher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/entity/WatcherEntity.java",
+          "src/main/resources/assets/lostinfog/models/item/watcher_spawn_egg.json",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/WatcherRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ShaderCheck",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shader_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/ShaderCheck.java"
+        ]
+      }
+    },
+    {
+      "name": "FlashlightSyncPayload",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flashlight_sync_payload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FlashlightSyncPayload.java"
+        ]
+      }
+    },
+    {
+      "name": "FlashlightNetworking",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flashlight_networking",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FlashlightNetworking.java"
+        ]
+      }
+    },
+    {
+      "name": "CameraConfig",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camera_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/CameraConfig.java"
+        ]
+      }
+    },
+    {
+      "name": "Palatka",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palatka",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/palatka.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/palatka.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/palatka.json"
+        ]
+      }
+    },
+    {
+      "name": "Krest",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/structure/krest.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/krest.json",
+          "src/main/resources/data/lostinfog/worldgen/template_pool/krest.json"
+        ]
+      }
+    },
+    {
+      "name": "Dom",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/dom.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/dom.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/dom.json"
+        ]
+      }
+    },
+    {
+      "name": "Koster",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koster",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/koster.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/koster.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/koster.json"
+        ]
+      }
+    },
+    {
+      "name": "Kletka",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kletka",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/kletka.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/kletka.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/kletka.json"
+        ]
+      }
+    },
+    {
+      "name": "Bunker",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bunker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/structure/bunker.json",
+          "src/main/resources/data/lostinfog/worldgen/template_pool/bunker.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/bunker.json"
+        ]
+      }
+    },
+    {
+      "name": "PillsPriZaviershieniiIspolzovaniia",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pills_pri_zaviershienii_ispolzovaniia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/procedures/PillsPriZaviershieniiIspolzovaniiaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Corner",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/client/renderer/CornerRenderer.java",
+          "src/main/java/net/mcreator/lostinfog/entity/CornerEntity.java",
+          "src/main/resources/assets/lostinfog/models/item/corner_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Friend",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friend",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/friend_spawn_egg.json",
+          "src/main/resources/data/lostinfog/neoforge/biome_modifier/friend_biome_modifier.json",
+          "src/main/java/net/mcreator/lostinfog/entity/FriendEntity.java",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/FriendRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "EntityHider",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "entity_hider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/EntityHider.java"
+        ]
+      }
+    },
+    {
+      "name": "FogDamageProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fog_damage_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FogDamageProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Flashlight",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flashlight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/Flashlight.java"
+        ]
+      }
+    },
+    {
+      "name": "DoorLockManager",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "door_lock_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/DoorLockManager.java"
+        ]
+      }
+    },
+    {
+      "name": "DoorHUDHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "door_hud_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/DoorHUDHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogClientTasks",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_client_tasks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogClientTasks.java"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogServerTasks",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_server_tasks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogServerTasks.java"
+        ]
+      }
+    },
+    {
+      "name": "Snapped",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snapped",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/snapped.json"
+        ]
+      }
+    },
+    {
+      "name": "List",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "list",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/item/ListItem.java",
+          "src/main/resources/assets/lostinfog/models/item/list.json"
+        ]
+      }
+    },
+    {
+      "name": "PaperScreem",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "paper_screem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/PaperScreem.java"
+        ]
+      }
+    },
+    {
+      "name": "Camp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/recipe/camp.json"
+        ]
+      }
+    },
+    {
+      "name": "UnlitCampfireHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "unlit_campfire_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/UnlitCampfireHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Palka",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/PalkaBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/palka.json",
+          "src/main/resources/assets/lostinfog/blockstates/palka.json",
+          "src/main/resources/assets/lostinfog/models/block/palka.json",
+          "src/main/resources/assets/lostinfog/models/item/palka.json"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogClient",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_client",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogClient.java"
+        ]
+      }
+    },
+    {
+      "name": "FrostbiteEventHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frostbite_event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FrostbiteEventHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "CampfireData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "campfire_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/CampfireData.java"
+        ]
+      }
+    },
+    {
+      "name": "FrostbiteData",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frostbite_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FrostbiteData.java"
+        ]
+      }
+    },
+    {
+      "name": "LostinfogModAttachments",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lostinfog_mod_attachments",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostinfogModAttachments.java"
+        ]
+      }
+    },
+    {
+      "name": "FrostbiteOverlay",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frostbite_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/FrostbiteOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "PalkaPriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palka_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/procedures/PalkaPriShchielchkiePKMPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Palkka",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palkka",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/neoforge/biome_modifier/palkka_biome_modifier.json",
+          "src/main/resources/data/lostinfog/worldgen/configured_feature/palkka.json",
+          "src/main/java/net/mcreator/lostinfog/block/PalkkaBlock.java",
+          "src/main/resources/data/lostinfog/worldgen/placed_feature/palkka.json",
+          "src/main/resources/assets/lostinfog/models/block/palkka.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/palkka.json",
+          "src/main/resources/assets/lostinfog/models/item/palkka.json",
+          "src/main/resources/assets/lostinfog/blockstates/palkka.json"
+        ]
+      }
+    },
+    {
+      "name": "Palkka3",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palkka_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/blockstates/palkka_3.json",
+          "src/main/resources/assets/lostinfog/models/item/palkka_3.json",
+          "src/main/resources/assets/lostinfog/models/block/palkka_3.json",
+          "src/main/java/net/mcreator/lostinfog/block/Palkka3Block.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/palkka_3.json"
+        ]
+      }
+    },
+    {
+      "name": "Palkka4",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palkka_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/Palkka4Block.java",
+          "src/main/resources/assets/lostinfog/models/item/palkka_4.json",
+          "src/main/resources/assets/lostinfog/models/block/palkka_4.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/palkka_4.json",
+          "src/main/resources/assets/lostinfog/blockstates/palkka_4.json"
+        ]
+      }
+    },
+    {
+      "name": "NetworkInit",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "network_init",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/NetworkInit.java"
+        ]
+      }
+    },
+    {
+      "name": "Day6",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_6.json"
+        ]
+      }
+    },
+    {
+      "name": "Day7",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_7.json"
+        ]
+      }
+    },
+    {
+      "name": "Radio",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radio",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/loot_table/blocks/radio.json",
+          "src/main/java/net/mcreator/lostinfog/block/RadioBlock.java",
+          "src/main/resources/assets/lostinfog/blockstates/radio.json",
+          "src/main/resources/assets/lostinfog/models/block/radio.json",
+          "src/main/resources/assets/lostinfog/models/item/radio.json"
+        ]
+      }
+    },
+    {
+      "name": "Radio2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radio_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/loot_table/blocks/radio_2.json",
+          "src/main/java/net/mcreator/lostinfog/block/Radio2Block.java",
+          "src/main/resources/assets/lostinfog/models/block/radio_2.json",
+          "src/main/resources/assets/lostinfog/blockstates/radio_2.json",
+          "src/main/resources/assets/lostinfog/models/item/radio_2.json"
+        ]
+      }
+    },
+    {
+      "name": "RadioProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "radio_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/RadioProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RadioVhsLoopClient",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "radio_vhs_loop_client",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/RadioVhsLoopClient.java"
+        ]
+      }
+    },
+    {
+      "name": "RadioHudHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "radio_hud_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/RadioHudHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Day8",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_8.json"
+        ]
+      }
+    },
+    {
+      "name": "Radiotask",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiotask",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/radiotask.json"
+        ]
+      }
+    },
+    {
+      "name": "Ending",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ending",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/dimension_type/ending.json",
+          "src/main/resources/data/lostinfog/dimension/ending.json",
+          "src/main/java/net/mcreator/lostinfog/world/dimension/EndingDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "Fogbunker",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fogbunker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/fogbunker.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/fogbunker.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/fogbunker.json"
+        ]
+      }
+    },
+    {
+      "name": "Vhod",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vhod",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/structure_set/vhod.json",
+          "src/main/resources/data/lostinfog/worldgen/template_pool/vhod.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/vhod.json"
+        ]
+      }
+    },
+    {
+      "name": "VhoddKoghdaSushchnostKhoditPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vhodd_koghda_sushchnost_khodit_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/procedures/VhoddKoghdaSushchnostKhoditPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vhodd",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vhodd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/block/vhodd.json",
+          "src/main/java/net/mcreator/lostinfog/block/VhoddBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/vhodd.json",
+          "src/main/resources/assets/lostinfog/models/item/vhodd.json",
+          "src/main/resources/assets/lostinfog/blockstates/vhodd.json"
+        ]
+      }
+    },
+    {
+      "name": "Fogfog",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fogfog",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/placed_feature/fogfog_tree.json",
+          "src/main/resources/data/lostinfog/worldgen/configured_feature/fogfog_tree.json",
+          "src/main/resources/data/lostinfog/worldgen/biome/fogfog.json"
+        ]
+      }
+    },
+    {
+      "name": "EndingDimensionHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ending_dimension_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/EndingDimensionHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Theend",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theend",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/theend.json"
+        ]
+      }
+    },
+    {
+      "name": "Day9",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/advancement/day_9.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerJoinBedHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "player_join_bed_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/PlayerJoinBedHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "CrosshairHideHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crosshair_hide_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/CrosshairHideHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Joe",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/joe.json",
+          "src/main/resources/assets/lostinfog/blockstates/joe.json",
+          "src/main/java/net/mcreator/lostinfog/block/JoeBlock.java",
+          "src/main/resources/assets/lostinfog/models/block/joe.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/joe.json"
+        ]
+      }
+    },
+    {
+      "name": "Eps",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eps",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/block/eps.json",
+          "src/main/java/net/mcreator/lostinfog/block/EpsBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/eps.json",
+          "src/main/resources/assets/lostinfog/models/item/eps.json",
+          "src/main/resources/assets/lostinfog/blockstates/eps.json"
+        ]
+      }
+    },
+    {
+      "name": "MainMenuVideo",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "main_menu_video",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/MainMenuVideo.java"
+        ]
+      }
+    },
+    {
+      "name": "SubPlayerLight",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sub_player_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/SubPlayerLight.java"
+        ]
+      }
+    },
+    {
+      "name": "EndingVideoHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ending_video_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/EndingVideoHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "EndingVideoHandler1",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ending_video_handler_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/EndingVideoHandler1.java"
+        ]
+      }
+    },
+    {
+      "name": "GOAT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/GOATBlock.java",
+          "src/main/resources/assets/lostinfog/models/block/goat.json",
+          "src/main/resources/assets/lostinfog/models/item/goat.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/goat.json",
+          "src/main/resources/assets/lostinfog/blockstates/goat.json"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogEventManager",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_event_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogEventManager.java"
+        ]
+      }
+    },
+    {
+      "name": "Windowentity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windowentity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/entity/WindowentityEntity.java",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/WindowentityRenderer.java",
+          "src/main/resources/assets/lostinfog/models/item/windowentity_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "WindowentityBehaviorHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "windowentity_behavior_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/WindowentityBehaviorHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "WindowentityShadowHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "windowentity_shadow_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/WindowentityShadowHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "Whoisthat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whoisthat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/whoisthat_spawn_egg.json",
+          "src/main/java/net/mcreator/lostinfog/entity/WhoisthatEntity.java",
+          "src/main/java/net/mcreator/lostinfog/client/renderer/WhoisthatRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AnalogSurveyEvent",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "analog_survey_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/AnalogSurveyEvent.java"
+        ]
+      }
+    },
+    {
+      "name": "LostInFogDistanceEffectProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lost_in_fog_distance_effect_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/LostInFogDistanceEffectProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EndingFatigueProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ending_fatigue_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/EndingFatigueProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "flashlight_off",
+      "files": [
+        "flashlight_off"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "flashlight_on",
+      "files": [
+        "flashlight_on"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "stukdoor",
+      "files": [
+        "door-knock-bedroom-1_zj6tgzvd_1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "stukokno",
+      "files": [
+        "door-knock-5_fksfgzed-_1__1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "mainmenu",
+      "files": [
+        "mainmenu"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "startgame",
+      "files": [
+        "startgame"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "tvvikl",
+      "files": [
+        "tvvikl_1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "tvvkl",
+      "files": [
+        "tvvkl_1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "vhs",
+      "files": [
+        "whitt_1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "flashlighton",
+      "files": [
+        "flashlight_on"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "flashlightoff",
+      "files": [
+        "flashlight_off"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "startgameshelk",
+      "files": [
+        "startgameshelk"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "scream",
+      "files": [
+        "aaah"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "ambient",
+      "files": [
+        "0add203edfc3791_1",
+        "1f7e41b8-d8a9-4ecb-ba62-a737ce94791b",
+        "3b17c33f-456d-4bee-a6f9-588400717716",
+        "4eac6844-0e41-4d07-a900-89c1140b9a67",
+        "6efd06ae-85e6-4418-b77b-8cd5f40f3798",
+        "9f404397-72e5-4af3-8217-ef4da31e4847",
+        "18e034a1-86bb-4b01-bc7f-acfb61f2abcc",
+        "36d740d0-d9ef-408f-927c-1957239cdae3",
+        "70fb6a6f-5f8a-4816-bf91-729c1bc80ef3",
+        "79d95b8d-6396-4a50-b60c-53825a43c3fd",
+        "85d11a53-8052-4806-98be-be1616c42eca",
+        "685e6e3e-6900-47bb-9ec8-d21b8b223848",
+        "07390e58-9f31-46e5-8423-4b30e37d1d66",
+        "7727cb55-1b57-4a11-8dd8-13619b70a30f",
+        "b9bd4d9c-8fbc-4cc6-871d-4733378c1056",
+        "b19764c7-3332-4fda-8cf8-2f158b321cd1",
+        "da3ea812-f691-47b2-9e07-5ef3ddbb37e2",
+        "e090598c-5697-4804-81c3-3e90cfa042aa",
+        "e0799423abeee07_1",
+        "glitch_1",
+        "glitch2_1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "event3",
+      "files": [
+        "dragon-studio-glitch-effect-1-397982-_mp3cut.net_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "itsme",
+      "files": [
+        "itsme"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "sarah",
+      "files": [
+        "baf8074c-179c-410d-8849-c5fb7d23fdb2",
+        "e7096cbb-ab6b-40a5-b6dd-b85cbe4db3be",
+        "76d1a437-1ba4-4cc8-b9e4-9f0cd93354b3",
+        "sarah"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "tabletka",
+      "files": [
+        "872621e90782f88"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "corner",
+      "files": [
+        "freesounds123-jumpscare-v3-335600_1",
+        "freesound_community-explosion-ambiance-45472_1",
+        "freesound_community-breath-stinger1-96164"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "thefog",
+      "files": [
+        "freesound_community-scary-wood-74661_mp3cut.net"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "attack",
+      "files": [
+        "freesound_community-jumpscare-68730"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "khekhe",
+      "files": [
+        "male-cough_m1naqjeo",
+        "cough_z1wfnj4d",
+        "jg-032316-sfx-coughing-male",
+        "zvuk-kashlja"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "forest",
+      "files": [
+        "freesound_community-forest-rain-atmo-fantasy-14435_mp3cut.net_2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "rad",
+      "files": [
+        "zvuk-radiopomeh-_mp3cut.net_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "radiosound",
+      "files": [
+        "255e6544-21e9-4157-8aff-b972fa3acf23"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "radiovhs",
+      "files": [
+        "zvuk-shuma-radio_1_mp3cut.net"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "startsoundvideo",
+      "files": [
+        "pornovideojava_audio-extractor.net"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "day1",
+      "files": [
+        "day1"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "day2",
+      "files": [
+        "day2"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "day3",
+      "files": [
+        "day3"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "day4",
+      "files": [
+        "day4"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "day5",
+      "files": [
+        "day5"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "ambientbunker",
+      "files": [
+        "freesound_community-the-bunker-piano-i-67401_mp3cut.net"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "death1",
+      "files": [
+        "death1"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    },
+    {
+      "name": "death2",
+      "files": [
+        "death2"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    },
+    {
+      "name": "day6",
+      "files": [
+        "day6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.ANDESITE_STAIRS",
+      "~Blocks.WAXED_OXIDIZED_CUT_COPPER",
+      "~Blocks.STONE#0",
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.lostinfog.radio": "Radio",
+      "subtitles.radiovhs": "",
+      "advancements.day_6.descr": "Day 6 begins",
+      "item.lostinfog.pills.description_0": "These tablets are contraindicated for people experiencing auditory hallucinations",
+      "subtitles.attack": "",
+      "advancements.day_2.title": "June 20",
+      "entity.lostinfog.whoisthat": "Whoisthat",
+      "subtitles.mainmenu": "",
+      "advancements.day_3.descr": "Day 3 begins",
+      "advancements.snapped.descr": "What was that?",
+      "subtitles.scream": "",
+      "entity.lostinfog.glitch": "Glitch",
+      "subtitles.corner": "",
+      "entity.lostinfog.friend": "Friend",
+      "item.lostinfog.thefog_spawn_egg": "Thefog Spawn Egg",
+      "subtitles.ambient": "",
+      "advancements.theend.title": "Ending 1",
+      "advancements.day_5.title": "Day 5",
+      "entity.lostinfog.watcher": "Watcher",
+      "subtitles.radionvhs": "",
+      "subtitles.vhs": "",
+      "block.lostinfog.mail": "Mail",
+      "advancements.day_4.title": "Day 4",
+      "subtitles.death2": "",
+      "advancements.radiotask.descr": "Find the frequency you need",
+      "subtitles.death1": "",
+      "item.lostinfog.cassette": "Old cassette ",
+      "advancements.day_4.descr": "Day 4 begins",
+      "subtitles.thefog": "",
+      "subtitles.startsoundvideo": "",
+      "block.lostinfog.palka": "Palka",
+      "block.lostinfog.tvon": "Tvon",
+      "item.lostinfog.david_spawn_egg": "David Spawn Egg",
+      "item.lostinfog.watcher_spawn_egg": "Watcher Spawn Egg",
+      "item.lostinfog.letter.description_0": "A letter written by my aunt",
+      "item.lostinfog.friend_spawn_egg": "Friend Spawn Egg",
+      "subtitles.khekhe": "",
+      "subtitles.forest": "",
+      "entity.lostinfog.corner": "Corner",
+      "entity.lostinfog.david": "David",
+      "entity.lostinfog.thefog": "Thefog",
+      "subtitles.startgameshelk": "",
+      "advancements.day_5.descr": "Day 5 begins",
+      "subtitles.shekj": "",
+      "item.lostinfog.windowentity_spawn_egg": "Windowentity Spawn Egg",
+      "item.lostinfog.letter": "Letter",
+      "subtitles.tvvikl": "",
+      "subtitles.stukokno": "",
+      "subtitles.sarah": "",
+      "subtitles.stukdoor": "",
+      "block.lostinfog.eps": "джо байден",
+      "advancements.day_9.title": "Ending 2",
+      "subtitles.flashlighton": "",
+      "block.lostinfog.palkka_4": "Palkka 4",
+      "block.lostinfog.palkka_3": "Palkka 3",
+      "subtitles.ambientbunker": "",
+      "advancements.day_6.title": "Day 6",
+      "biome.lostinfog.fog_forest_biom": "Fog Forest Biom",
+      "item.lostinfog.glitch_spawn_egg": "Glitch Spawn Egg",
+      "subtitles.flashlightoff": "",
+      "entity.lostinfog.windowentity": "Windowentity",
+      "advancements.snapped.title": "The tape snapped",
+      "block.lostinfog.tvoff": "Tvoff",
+      "block.lostinfog.goat": "джо байден",
+      "item.lostinfog.whoisthat_spawn_egg": "Whoisthat Spawn Egg",
+      "advancements.day_3.title": "Day 3",
+      "subtitles.radiosound": "",
+      "subtitles.itsme": "",
+      "block.lostinfog.palkka": "Palkka",
+      "subtitles.tvvkl": "",
+      "item.lostinfog.pills": "Pills",
+      "subtitles.flashlight_off": "",
+      "subtitles.tabletka": "",
+      "item.lostinfog.list": "Piece of paper",
+      "subtitles.startgame": "",
+      "advancements.day_7.descr": "???",
+      "item.lostinfog.cassette.description_0": "An old cassette, where did it get from? ",
+      "block.lostinfog.radio_2": "Radio",
+      "advancements.day_1.descr": "Log in to the game",
+      "biome.lostinfog.fogfog": "Fogfog",
+      "advancements.day_8.descr": "fog here",
+      "subtitles.event3": "",
+      "subtitles.day1": "",
+      "advancements.day_8.title": "June 26",
+      "subtitles.day2": "",
+      "subtitles.day3": "",
+      "subtitles.day4": "",
+      "subtitles.day5": "",
+      "item.lostinfog.corner_spawn_egg": "Corner Spawn Egg",
+      "subtitles.rad": "",
+      "subtitles.day6": "",
+      "subtitles.flashlight_on": "",
+      "block.lostinfog.joe": "джо байден",
+      "advancements.day_1.title": "Who\u0027s knocking?",
+      "advancements.radiotask.title": "Radio task",
+      "advancements.day_9.descr": "gg ez",
+      "advancements.day_2.descr": "Day 2 begins",
+      "advancements.day_7.title": "June 25",
+      "advancements.theend.descr": "gg ez",
+      "block.lostinfog.vhodd": "Vhodd"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "client",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "lostinfog",
+    "modName": "lost in fog",
+    "version": "1.0.1",
+    "description": "The fog is coming. 4:23 PM, June 26, 2026. Point of origin: 26.395348193316° N, -144.778567450876° W. Expansion rate: 5.3x10^8 meters ",
+    "author": "FLYover67",
+    "websiteURL": "https://www.patreon.com/c/flyover67",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Author: FLYover67. Testing: Vapsig. Mode: HPR_777 .l With the blessing of Benjamin Netanyahu",
+    "modElementsPackage": "net.mcreator.lostinfog"
+  },
+  "mcreatorVersion": 202400452410
+}

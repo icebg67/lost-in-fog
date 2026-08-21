@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/goat"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/goat",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/goat",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/goat",
+      "y": 270
+    }
+  }
+}

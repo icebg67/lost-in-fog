@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/tvon",
+  "textures": {
+    "all": "lostinfog:block/2tv",
+    "particle": "lostinfog:block/2tv",
+    "1": "lostinfog:block/2tv"
+  },
+  "render_type": "solid"
+}
