@@ -497,11 +497,11 @@ public class IntroEventHandler {
                     );
                 } else if (timer == 860) {
                     player.sendSystemMessage(
-                        Component.literal("Lost in fog 1.0.1 - Made by FLYover67.")
+                        Component.literal("Lost in fog 1.0.2 - Made by FLYover67.")
                     );
 
                     player.displayClientMessage(
-                        Component.literal("Lost in fog 1.0.1 - Made by FLYover67."),
+                        Component.literal("Lost in fog 1.0.2 - Made by FLYover67."),
                         true
                     );
 

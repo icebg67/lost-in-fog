@@ -138,13 +138,15 @@ public class LostInFogServerTasks {
             serverPhraseShown = true;
         }
 
+
         if (serverTicksActive >= HUD_DELAY_TICKS) {
             serverHudActive = true;
         }
 
-        if (serverHudActive && !serverCompleted) {
+
+        if (!serverCompleted) {
             if (serverDay == 4) {
-                if (serverTicksActive >= HUD_DELAY_TICKS + 24000) {
+                if (serverTicksActive >= 24000) {
                     serverCompleted = true;
                     syncToAll(server);
                 }
@@ -213,7 +215,7 @@ public class LostInFogServerTasks {
         Player player = event.getPlayer();
         if (player.level().isClientSide()) return;
         if (!player.level().dimension().equals(Level.OVERWORLD)) return;
-        if (serverCompleted || !serverHudActive) return;
+        if (serverCompleted) return; 
 
         int playerCount = player.getServer().getPlayerCount();
         BlockState bs = event.getState();
@@ -252,7 +254,7 @@ public class LostInFogServerTasks {
         if (!(event.getEntity() instanceof Player player)) return;
         if (player.level().isClientSide()) return;
         if (!player.level().dimension().equals(Level.OVERWORLD)) return;
-        if (serverCompleted || !serverHudActive) return;
+        if (serverCompleted) return;
 
         int playerCount = player.getServer().getPlayerCount();
         if (serverDay == 5) {
@@ -273,7 +275,7 @@ public class LostInFogServerTasks {
         if (!(event.getSource().getEntity() instanceof Player player)) return;
         if (player.level().isClientSide()) return;
         if (!player.level().dimension().equals(Level.OVERWORLD)) return;
-        if (serverCompleted || !serverHudActive) return;
+        if (serverCompleted) return;
 
         int playerCount = player.getServer().getPlayerCount();
         EntityType<?> t = event.getEntity().getType();
@@ -293,9 +295,11 @@ public class LostInFogServerTasks {
         }
     }
 
+
     private static void syncToAll(MinecraftServer server) {
         PacketDistributor.sendToAllPlayers(new LostInFogClientTasks.SyncPacket(serverDay, serverTicksActive, serverCount1, serverCount2, serverCompleted, server.getPlayerCount(), serverHudActive));
     }
+
 
     private static String[] getPhrasesForDay(int day) {
         return switch (day) {
@@ -324,7 +328,7 @@ public class LostInFogServerTasks {
         return switch (serverDay) {
             case 2 -> serverCount1 >= 5 * playerCount && serverCount2 >= 15 * playerCount;
             case 3 -> serverCount1 >= 5 * playerCount && serverCount2 >= 10 * playerCount;
-            case 4 -> serverTicksActive >= HUD_DELAY_TICKS + 24000;
+            case 4 -> serverTicksActive >= 24000;
             case 5 -> serverCount1 >= 10 * playerCount;
             case 6 -> serverCompleted;
             case 7 -> serverCompleted;
