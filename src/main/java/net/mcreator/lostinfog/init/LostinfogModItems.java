@@ -17,6 +17,7 @@ import net.mcreator.lostinfog.item.PillsItem;
 import net.mcreator.lostinfog.item.ListItem;
 import net.mcreator.lostinfog.item.LetterItem;
 import net.mcreator.lostinfog.item.CassetteItem;
+import net.mcreator.lostinfog.item.CannedfooditemItem;
 import net.mcreator.lostinfog.LostinfogMod;
 
 public class LostinfogModItems {
@@ -46,6 +47,10 @@ public class LostinfogModItems {
 	public static final DeferredItem<Item> GOAT = block(LostinfogModBlocks.GOAT);
 	public static final DeferredItem<Item> WINDOWENTITY_SPAWN_EGG = REGISTRY.register("windowentity_spawn_egg", () -> new DeferredSpawnEggItem(LostinfogModEntities.WINDOWENTITY, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> WHOISTHAT_SPAWN_EGG = REGISTRY.register("whoisthat_spawn_egg", () -> new DeferredSpawnEggItem(LostinfogModEntities.WHOISTHAT, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> CANNEDFOODITEM = REGISTRY.register("cannedfooditem", CannedfooditemItem::new);
+	public static final DeferredItem<Item> CANNEDFOODBLOCK = block(LostinfogModBlocks.CANNEDFOODBLOCK);
+	public static final DeferredItem<Item> CHAIR_HPR = block(LostinfogModBlocks.CHAIR_HPR);
+	public static final DeferredItem<Item> FLASHLIGHT_HPR = block(LostinfogModBlocks.FLASHLIGHT_HPR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,7 @@
+{
+  "parent": "lostinfog:custom/canned-food",
+  "textures": {
+    "0": "lostinfog:block/more-pixels-canned-food",
+    "particle": "lostinfog:item/more-pixels-canned-food"
+  }
+}

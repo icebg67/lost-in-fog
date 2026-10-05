@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/chair_hpr"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/chair_hpr",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/chair_hpr",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/chair_hpr",
+      "y": 270
+    }
+  }
+}

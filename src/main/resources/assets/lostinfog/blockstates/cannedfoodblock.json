@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lostinfog:block/cannedfoodblock"
+    },
+    "facing=east": {
+      "model": "lostinfog:block/cannedfoodblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lostinfog:block/cannedfoodblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lostinfog:block/cannedfoodblock",
+      "y": 270
+    }
+  }
+}

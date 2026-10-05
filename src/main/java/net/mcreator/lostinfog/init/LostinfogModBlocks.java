@@ -21,7 +21,10 @@ import net.mcreator.lostinfog.block.PalkaBlock;
 import net.mcreator.lostinfog.block.MailBlock;
 import net.mcreator.lostinfog.block.JoeBlock;
 import net.mcreator.lostinfog.block.GOATBlock;
+import net.mcreator.lostinfog.block.FlashlightHPRBlock;
 import net.mcreator.lostinfog.block.EpsBlock;
+import net.mcreator.lostinfog.block.ChairHPRBlock;
+import net.mcreator.lostinfog.block.CannedfoodblockBlock;
 import net.mcreator.lostinfog.LostinfogMod;
 
 public class LostinfogModBlocks {
@@ -39,6 +42,9 @@ public class LostinfogModBlocks {
 	public static final DeferredBlock<Block> JOE = REGISTRY.register("joe", JoeBlock::new);
 	public static final DeferredBlock<Block> EPS = REGISTRY.register("eps", EpsBlock::new);
 	public static final DeferredBlock<Block> GOAT = REGISTRY.register("goat", GOATBlock::new);
+	public static final DeferredBlock<Block> CANNEDFOODBLOCK = REGISTRY.register("cannedfoodblock", CannedfoodblockBlock::new);
+	public static final DeferredBlock<Block> CHAIR_HPR = REGISTRY.register("chair_hpr", ChairHPRBlock::new);
+	public static final DeferredBlock<Block> FLASHLIGHT_HPR = REGISTRY.register("flashlight_hpr", FlashlightHPRBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

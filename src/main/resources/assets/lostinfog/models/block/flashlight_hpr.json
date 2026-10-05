@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/flashlight",
+  "textures": {
+    "all": "lostinfog:block/flashlight-off",
+    "particle": "lostinfog:block/flashlight-off",
+    "0": "lostinfog:block/flashlight-off"
+  },
+  "render_type": "solid"
+}

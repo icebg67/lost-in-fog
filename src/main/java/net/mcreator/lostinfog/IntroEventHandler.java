@@ -321,6 +321,12 @@ public class IntroEventHandler {
 
         if (!player.level().isClientSide() && player.level() instanceof ServerLevel serverLevel) {
             CompoundTag data = getPlayerData(player);
+            boolean hasFlashlight = data.getBoolean("has_flashlight");
+            
+            PacketDistributor.sendToPlayer(
+                (ServerPlayer) player, 
+                new net.mcreator.lostinfog.network.FlashlightNetworking.FlashlightUnlockPayload(hasFlashlight)
+            );
 
             if (!data.getBoolean("lostinfog_intro_done")) {
                 data.putBoolean("lostinfog_intro_done", true);
@@ -345,6 +351,25 @@ public class IntroEventHandler {
                     (ServerPlayer) player,
                     new IntroLockPayload(true)
                 );
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onFlashlightBlockInteraction(PlayerInteractEvent.RightClickBlock event) {
+        Player player = event.getEntity();
+        
+        if (!player.level().isClientSide()) {
+            BlockState blockst = player.level().getBlockState(event.getPos());
+            String name = BuiltInRegistries.BLOCK.getKey(blockst.getBlock()).toString();
+            
+            if (name.equals("lostinfog:flashlight_hpr")) {
+                player.level().removeBlock(event.getPos(), false);
+                CompoundTag data = getPlayerData(player);
+                data.putBoolean("has_flashlight", true);
+                
+                player.displayClientMessage(Component.literal("Press R to turn on the flashlight. Shift + Scroll to adjust."), true);
+                PacketDistributor.sendToPlayer((ServerPlayer) player, new net.mcreator.lostinfog.network.FlashlightNetworking.FlashlightUnlockPayload(true));
             }
         }
     }
@@ -475,17 +500,7 @@ public class IntroEventHandler {
                     }
                 }
             } else if (state == 9) {
-                if (timer == 0) {
-                    player.displayClientMessage(
-                        Component.literal("Press R to turn on the flashlight"),
-                        true
-                    );
-                } else if (timer == 60) {
-                    player.displayClientMessage(
-                        Component.literal(""),
-                        true
-                    );
-                } else if (timer == 300) {
+                if (timer == 300) {
                     player.displayClientMessage(
                         Component.literal("Well, time to check mail..."),
                         true
@@ -497,11 +512,11 @@ public class IntroEventHandler {
                     );
                 } else if (timer == 860) {
                     player.sendSystemMessage(
-                        Component.literal("Lost in fog 1.0.2 - Made by FLYover67.")
+                        Component.literal("Lost in fog 2.0 - Made by FLYover67.")
                     );
 
                     player.displayClientMessage(
-                        Component.literal("Lost in fog 1.0.2 - Made by FLYover67."),
+                        Component.literal("Lost in fog 2.0 - Made by FLYover67."),
                         true
                     );
 

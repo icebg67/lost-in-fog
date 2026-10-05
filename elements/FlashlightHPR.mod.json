@@ -1,0 +1,187 @@
+{
+  "_fv": 73,
+  "_type": "block",
+  "definition": {
+    "texture": "flashlight-off",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "flashlight:default",
+    "rotationMode": 1,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 5.9868,
+        "my": -0.2632,
+        "mz": 3.5884,
+        "Mx": 10.5132,
+        "My": 4.2632,
+        "Mz": 4.9116,
+        "subtract": false
+      },
+      {
+        "mx": 6.17,
+        "my": -0.08,
+        "mz": 3.71,
+        "Mx": 10.33,
+        "My": 4.08,
+        "Mz": 5.79,
+        "subtract": false
+      },
+      {
+        "mx": 6.274,
+        "my": 0.024,
+        "mz": 3.762,
+        "Mx": 10.226,
+        "My": 3.976,
+        "Mz": 5.738,
+        "subtract": false
+      },
+      {
+        "mx": 6.5444,
+        "my": 0.2944,
+        "mz": 8.8972,
+        "Mx": 9.9556,
+        "My": 3.7056,
+        "Mz": 10.6028,
+        "subtract": false
+      },
+      {
+        "mx": 6.5444,
+        "my": 0.2944,
+        "mz": 10.8972,
+        "Mx": 9.9556,
+        "My": 3.7056,
+        "Mz": 12.6028,
+        "subtract": false
+      },
+      {
+        "mx": 6.5444,
+        "my": 0.2944,
+        "mz": 6.3972,
+        "Mx": 9.9556,
+        "My": 3.7056,
+        "Mz": 8.1028,
+        "subtract": false
+      },
+      {
+        "mx": 6.627,
+        "my": 0.377,
+        "mz": 5.33615,
+        "Mx": 9.873,
+        "My": 3.623,
+        "Mz": 13.16385,
+        "subtract": false
+      }
+    ],
+    "customProperties": [],
+    "name": "Flashlight HPR",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "NONE"
+    },
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": true,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "hasInventory": false,
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

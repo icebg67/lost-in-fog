@@ -1227,18 +1227,6 @@
       }
     },
     {
-      "name": "PlayerJoinBedHandler",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "player_join_bed_handler",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lostinfog/PlayerJoinBedHandler.java"
-        ]
-      }
-    },
-    {
       "name": "CrosshairHideHandler",
       "type": "code",
       "compiles": true,
@@ -1443,6 +1431,132 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/lostinfog/EndingFatigueProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Cannedfooditem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannedfooditem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lostinfog/models/item/cannedfooditem.json",
+          "src/main/java/net/mcreator/lostinfog/item/CannedfooditemItem.java"
+        ]
+      },
+      "path": "~/huina"
+    },
+    {
+      "name": "CannedfoodblockPriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannedfoodblock_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/procedures/CannedfoodblockPriShchielchkiePKMPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/huina"
+    },
+    {
+      "name": "Cannedfoodblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannedfoodblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/CannedfoodblockBlock.java",
+          "src/main/resources/data/lostinfog/loot_table/blocks/cannedfoodblock.json",
+          "src/main/resources/assets/lostinfog/models/item/cannedfoodblock.json",
+          "src/main/resources/assets/lostinfog/blockstates/cannedfoodblock.json",
+          "src/main/resources/assets/lostinfog/models/block/cannedfoodblock.json"
+        ]
+      },
+      "path": "~/huina"
+    },
+    {
+      "name": "ChairHPR",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_hpr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/ChairHPRBlock.java",
+          "src/main/resources/assets/lostinfog/blockstates/chair_hpr.json",
+          "src/main/resources/assets/lostinfog/models/item/chair_hpr.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/chair_hpr.json",
+          "src/main/resources/assets/lostinfog/models/block/chair_hpr.json"
+        ]
+      },
+      "path": "~/huina"
+    },
+    {
+      "name": "FlashlightHPR",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_hpr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/block/FlashlightHPRBlock.java",
+          "src/main/resources/assets/lostinfog/blockstates/flashlight_hpr.json",
+          "src/main/resources/assets/lostinfog/models/item/flashlight_hpr.json",
+          "src/main/resources/data/lostinfog/loot_table/blocks/flashlight_hpr.json",
+          "src/main/resources/assets/lostinfog/models/block/flashlight_hpr.json"
+        ]
+      },
+      "path": "~/huina"
+    },
+    {
+      "name": "Podval",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "podval",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/worldgen/template_pool/podval.json",
+          "src/main/resources/data/lostinfog/worldgen/structure_set/podval.json",
+          "src/main/resources/data/lostinfog/worldgen/structure/podval.json"
+        ]
+      }
+    },
+    {
+      "name": "DaySkipMechanic",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "day_skip_mechanic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lostinfog/DaySkipMechanic.java"
         ]
       }
     }
@@ -1773,6 +1887,9 @@
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:Cannedfooditem"
     ]
   },
   "tab_element_order": {},
@@ -1782,14 +1899,14 @@
       "subtitles.radiovhs": "",
       "advancements.day_6.descr": "Day 6 begins",
       "item.lostinfog.pills.description_0": "These tablets are contraindicated for people experiencing auditory hallucinations",
-      "advancements.day_2.title": "June 20",
       "subtitles.attack": "",
+      "advancements.day_2.title": "June 20",
       "entity.lostinfog.whoisthat": "Whoisthat",
       "subtitles.mainmenu": "",
       "advancements.day_3.descr": "Day 3 begins",
       "advancements.snapped.descr": "What was that?",
-      "entity.lostinfog.glitch": "Glitch",
       "subtitles.scream": "",
+      "entity.lostinfog.glitch": "Glitch",
       "subtitles.corner": "",
       "entity.lostinfog.friend": "Friend",
       "item.lostinfog.thefog_spawn_egg": "Thefog Spawn Egg",
@@ -1799,8 +1916,10 @@
       "entity.lostinfog.watcher": "Watcher",
       "subtitles.radionvhs": "",
       "subtitles.vhs": "",
+      "block.lostinfog.cannedfoodblock": "Cannedfoodblock",
       "block.lostinfog.mail": "Mail",
       "advancements.day_4.title": "Day 4",
+      "block.lostinfog.chair_hpr": "Chair",
       "subtitles.death2": "",
       "advancements.radiotask.descr": "Find the frequency you need",
       "subtitles.death1": "",
@@ -1809,8 +1928,8 @@
       "subtitles.thefog": "",
       "subtitles.startsoundvideo": "",
       "block.lostinfog.palka": "Palka",
-      "item.lostinfog.david_spawn_egg": "David Spawn Egg",
       "block.lostinfog.tvon": "Tvon",
+      "item.lostinfog.david_spawn_egg": "David Spawn Egg",
       "item.lostinfog.watcher_spawn_egg": "Watcher Spawn Egg",
       "item.lostinfog.letter.description_0": "A letter written by my aunt",
       "item.lostinfog.friend_spawn_egg": "Friend Spawn Egg",
@@ -1820,8 +1939,8 @@
       "entity.lostinfog.david": "David",
       "entity.lostinfog.thefog": "Thefog",
       "subtitles.startgameshelk": "",
-      "subtitles.shekj": "",
       "advancements.day_5.descr": "Day 5 begins",
+      "subtitles.shekj": "",
       "item.lostinfog.windowentity_spawn_egg": "Windowentity Spawn Egg",
       "item.lostinfog.letter": "Letter",
       "subtitles.tvvikl": "",
@@ -1830,6 +1949,7 @@
       "subtitles.stukdoor": "",
       "block.lostinfog.eps": "джо байден",
       "advancements.day_9.title": "Ending 2",
+      "block.lostinfog.chair_hpr.description_0": "A comfortable wooden chair, a gift from HPR",
       "subtitles.flashlighton": "",
       "block.lostinfog.palkka_4": "Palkka 4",
       "block.lostinfog.palkka_3": "Palkka 3",
@@ -1871,10 +1991,13 @@
       "subtitles.day6": "",
       "subtitles.flashlight_on": "",
       "block.lostinfog.joe": "джо байден",
+      "item.lostinfog.cannedfooditem.description_0": "Delicious canned fish, but it looks like it might be past its expiration date...?",
       "advancements.day_1.title": "Who\u0027s knocking?",
       "advancements.radiotask.title": "Radio task",
       "advancements.day_9.descr": "gg ez",
       "advancements.day_2.descr": "Day 2 begins",
+      "item.lostinfog.cannedfooditem": "Canned Fish",
+      "block.lostinfog.flashlight_hpr": "Flashlight HPR",
       "advancements.day_7.title": "June 25",
       "advancements.theend.descr": "gg ez",
       "block.lostinfog.vhodd": "Vhodd"
@@ -1885,6 +2008,10 @@
     "children": [
       {
         "name": "client",
+        "children": []
+      },
+      {
+        "name": "huina",
         "children": []
       }
     ]
@@ -1905,7 +2032,7 @@
       "geckolib"
     ],
     "currentGenerator": "neoforge-1.21.1",
-    "credits": "Author: FLYover67. Testing: Vapsig. Mode: HPR_777 .l With the blessing of Benjamin Netanyahu",
+    "credits": "Author: FLYover67. Testing: Vapsig. Model: HPR_777 .l With the blessing of Benjamin Netanyahu",
     "modElementsPackage": "net.mcreator.lostinfog"
   },
   "mcreatorVersion": 202400452410

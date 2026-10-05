@@ -8,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
@@ -113,6 +114,9 @@ public class StartSpawnHandler {
         if (!data.houseGenerated) {
             Optional<StructureTemplate> templateOpt = serverLevel.getStructureManager()
                     .get(ResourceLocation.fromNamespaceAndPath("lostinfog", "house"));
+            
+            Optional<StructureTemplate> podvalOpt = serverLevel.getStructureManager()
+                    .get(ResourceLocation.fromNamespaceAndPath("lostinfog", "podval"));
 
             if (templateOpt.isEmpty()) return;
 
@@ -130,6 +134,33 @@ public class StartSpawnHandler {
                     serverLevel.getRandom(),
                     3
             );
+
+            if (podvalOpt.isPresent()) {
+                StructureTemplate podvalTemp = podvalOpt.get();
+                int pX = podvalTemp.getSize().getX();
+                int pY = podvalTemp.getSize().getY();
+                int pZ = podvalTemp.getSize().getZ();
+
+                int houseX = template.getSize().getX();
+                int houseZ = template.getSize().getZ();
+
+                int shiftX = (houseX + pX) / 2 - 1;
+                int shiftZ = (houseZ + pZ) / 2 - 1;
+
+                BlockPos pPos = basePos.offset(shiftX, -pY, shiftZ);
+
+                StructurePlaceSettings podvalSetings = new StructurePlaceSettings()
+                        .setRotation(Rotation.CLOCKWISE_180);
+
+                podvalTemp.placeInWorld(
+                        serverLevel,
+                        pPos,
+                        pPos,
+                        podvalSetings,
+                        serverLevel.getRandom(),
+                        3
+                );
+            }
 
             BlockPos tp = basePos.offset(
                     template.getSize().getX() / 2,

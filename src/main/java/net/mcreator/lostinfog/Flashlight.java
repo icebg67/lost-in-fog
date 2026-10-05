@@ -32,10 +32,9 @@ public class Flashlight {
     private static final Map<UUID, LightRenderData> renderDataMap = new ConcurrentHashMap<>();
 
     private static boolean localStateChanged = false;
-    private static int flashlightToggleCount = 0;
-    private static int tipDelayTimer = -1;
     private static int reminderTimer = 0;
     private static int nextReminderTime = 9600;
+    public static boolean clientHasFlashlight = false;
 
     private static final Random RANDOM = new Random();
 
@@ -143,48 +142,33 @@ public class Flashlight {
                 reminderTimer = 0;
                 nextReminderTime = (5 * 60 * 20) + RANDOM.nextInt((15 * 60 * 20) - (5 * 60 * 20) + 1);
 
-                if (!localState.isOn) {
+                if (!localState.isOn && clientHasFlashlight) {
                     String keyName = FLASHLIGHT_KEY.getTranslatedKeyMessage().getString();
                     String text = String.format(REMINDER_TEXTS[RANDOM.nextInt(REMINDER_TEXTS.length)], keyName);
                     mc.gui.setOverlayMessage(Component.literal(text), false);
                 }
             }
 
-            if (tipDelayTimer > 0) {
-                tipDelayTimer--;
-                if (tipDelayTimer == 0) {
-                    if (localState.isOn) {
-                        mc.gui.setOverlayMessage(Component.literal("Shift + Mouse Wheel - Adjust flashlight"), false);
-                    }
-                    tipDelayTimer = -1;
-                }
-            }
-
             if (mc.screen == null) {
                 while (FLASHLIGHT_KEY.consumeClick()) {
-                    localState.isOn = !localState.isOn;
-                    sendSyncPacket(localState);
+                    if (clientHasFlashlight) {
+                        localState.isOn = !localState.isOn;
+                        sendSyncPacket(localState);
 
-                    String sound = localState.isOn ? "lostinfog:flashlighton" : "lostinfog:flashlightoff";
+                        String sound = localState.isOn ? "lostinfog:flashlighton" : "lostinfog:flashlightoff";
 
-                    mc.level.playLocalSound(
-                            mc.player.getX(),
-                            mc.player.getY(),
-                            mc.player.getZ(),
-                            net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse(sound)),
-                            SoundSource.PLAYERS,
-                            1.0f,
-                            1.0f,
-                            false
-                    );
-
-                    if (localState.isOn) {
-                        flashlightToggleCount++;
-                        if (flashlightToggleCount <= 3) {
-                            tipDelayTimer = 100;
-                        }
+                        mc.level.playLocalSound(
+                                mc.player.getX(),
+                                mc.player.getY(),
+                                mc.player.getZ(),
+                                net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse(sound)),
+                                SoundSource.PLAYERS,
+                                1.0f,
+                                1.0f,
+                                false
+                        );
                     } else {
-                        tipDelayTimer = -1;
+                        mc.gui.setOverlayMessage(Component.literal("I don't have a flashlight"), false);
                     }
                 }
             }
@@ -192,6 +176,7 @@ public class Flashlight {
 
         @SubscribeEvent
         public static void onMouseScroll(InputEvent.MouseScrollingEvent event) {
+            if (!clientHasFlashlight) return;
             FlashlightState localState = getLocalState();
             if (!localState.isOn) return;
 

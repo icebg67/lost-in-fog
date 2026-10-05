@@ -1,0 +1,9 @@
+{
+  "parent": "lostinfog:custom/chair-1",
+  "textures": {
+    "all": "lostinfog:block/chair-texture",
+    "particle": "lostinfog:block/chair-texture",
+    "0": "lostinfog:block/chair-texture"
+  },
+  "render_type": "solid"
+}

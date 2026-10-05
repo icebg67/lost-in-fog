@@ -16,6 +16,10 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.codec.ByteBufCodecs;
+import io.netty.buffer.ByteBuf;
 
 import java.util.Map;
 import java.util.UUID;
@@ -49,6 +53,12 @@ public class FlashlightNetworking {
                 } catch (Exception ignored) {
                 }
             }
+        });
+    }
+
+    public static void handleUnlock(FlashlightUnlockPayload payload, IPayloadContext context) {
+        context.enqueueWork(() -> {
+            net.mcreator.lostinfog.Flashlight.clientHasFlashlight = payload.hasFlashlight();
         });
     }
 
@@ -118,6 +128,24 @@ public class FlashlightNetworking {
                     FlashlightSyncPayload.STREAM_CODEC,
                     FlashlightNetworking::handle
             );
+            registrar.playToClient(
+                    FlashlightUnlockPayload.TYPE,
+                    FlashlightUnlockPayload.STREAM_CODEC,
+                    FlashlightNetworking::handleUnlock
+            );
+        }
+    }
+
+    public record FlashlightUnlockPayload(boolean hasFlashlight) implements CustomPacketPayload {
+        public static final Type<FlashlightUnlockPayload> TYPE = new Type<>(ResourceLocation.parse("lostinfog:flashlight_unlock"));
+        public static final StreamCodec<ByteBuf, FlashlightUnlockPayload> STREAM_CODEC = StreamCodec.composite(
+                ByteBufCodecs.BOOL, FlashlightUnlockPayload::hasFlashlight,
+                FlashlightUnlockPayload::new
+        );
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() {
+            return TYPE;
         }
     }
 }

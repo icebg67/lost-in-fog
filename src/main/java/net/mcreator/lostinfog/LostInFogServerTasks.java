@@ -33,7 +33,9 @@ public class LostInFogServerTasks {
     public static int serverTicksActive = 0;
     public static int serverCount1 = 0;
     public static int serverCount2 = 0;
+    public static int serverOptCount = 0;
     public static boolean serverCompleted = false;
+    public static boolean serverOptCompleted = false;
     public static boolean serverPhraseShown = false;
     public static boolean serverHudActive = false;
 
@@ -84,7 +86,9 @@ public class LostInFogServerTasks {
             serverTicksActive = 0;
             serverCount1 = 0;
             serverCount2 = 0;
+            serverOptCount = 0;
             serverCompleted = false;
+            serverOptCompleted = false;
             serverPhraseShown = false;
             serverHudActive = false;
             currentPhrase = "";
@@ -126,11 +130,6 @@ public class LostInFogServerTasks {
             }
         }
 
-        if (serverDay == 1) {
-            if (serverTicksActive % 20 == 0) syncToAll(server);
-            return;
-        }
-
         if (serverTicksActive == PHRASE_DELAY_TICKS && !serverPhraseShown) {
             String[] phrases = getPhrasesForDay(serverDay);
             currentPhrase = phrases[new Random().nextInt(phrases.length)];
@@ -138,14 +137,12 @@ public class LostInFogServerTasks {
             serverPhraseShown = true;
         }
 
-
         if (serverTicksActive >= HUD_DELAY_TICKS) {
             serverHudActive = true;
         }
 
-
         if (!serverCompleted) {
-            if (serverDay == 4) {
+            if (serverDay == 1 || serverDay == 4) {
                 if (serverTicksActive >= 24000) {
                     serverCompleted = true;
                     syncToAll(server);
@@ -215,25 +212,34 @@ public class LostInFogServerTasks {
         Player player = event.getPlayer();
         if (player.level().isClientSide()) return;
         if (!player.level().dimension().equals(Level.OVERWORLD)) return;
-        if (serverCompleted) return; 
 
         int playerCount = player.getServer().getPlayerCount();
         BlockState bs = event.getState();
         boolean changed = false;
 
-        if (serverDay == 2) {
-            if (bs.is(BlockTags.LOGS)) {
-                if (serverCount1 < 5 * playerCount) { serverCount1++; changed = true; }
-            } else if (bs.is(Blocks.STONE) || bs.is(Blocks.COBBLESTONE) || bs.is(Blocks.DEEPSLATE)) {
-                if (serverCount2 < 15 * playerCount) { serverCount2++; changed = true; }
+        if (serverDay == 1) {
+            if (bs.is(Blocks.COBWEB) && !serverOptCompleted) {
+                if (serverOptCount < 5 * playerCount) {
+                    serverOptCount++;
+                    if (serverOptCount >= 5 * playerCount) {
+                        serverOptCompleted = true;
+                    }
+                    changed = true;
+                }
             }
-            if (checkTaskCompletion(playerCount)) {
-                serverCompleted = true;
-                syncToAll(player.getServer());
-            } else if (changed) {
-                syncToAll(player.getServer());
+        } else if (serverDay == 2) {
+            if (!serverCompleted) {
+                if (bs.is(BlockTags.LOGS)) {
+                    if (serverCount1 < 5 * playerCount) { serverCount1++; changed = true; }
+                } else if (bs.is(Blocks.STONE) || bs.is(Blocks.COBBLESTONE) || bs.is(Blocks.DEEPSLATE)) {
+                    if (serverCount2 < 15 * playerCount) { serverCount2++; changed = true; }
+                }
+                if (checkTaskCompletion(playerCount)) {
+                    serverCompleted = true;
+                    changed = true;
+                }
             }
-        } else if (serverDay == 3) {
+        } else if (serverDay == 3 && !serverCompleted) {
             if (bs.is(Blocks.IRON_ORE) || bs.is(Blocks.DEEPSLATE_IRON_ORE)) {
                 if (serverCount1 < 5 * playerCount) {
                     serverCount1++;
@@ -242,10 +248,12 @@ public class LostInFogServerTasks {
             }
             if (checkTaskCompletion(playerCount)) {
                 serverCompleted = true;
-                syncToAll(player.getServer());
-            } else if (changed) {
-                syncToAll(player.getServer());
+                changed = true;
             }
+        }
+
+        if (changed) {
+            syncToAll(player.getServer());
         }
     }
 
@@ -262,10 +270,8 @@ public class LostInFogServerTasks {
                 serverCount1++;
                 if (checkTaskCompletion(playerCount)) {
                     serverCompleted = true;
-                    syncToAll(player.getServer());
-                } else {
-                    syncToAll(player.getServer());
                 }
+                syncToAll(player.getServer());
             }
         }
     }
@@ -286,35 +292,31 @@ public class LostInFogServerTasks {
                     serverCount2++;
                     if (checkTaskCompletion(playerCount)) {
                         serverCompleted = true;
-                        syncToAll(player.getServer());
-                    } else {
-                        syncToAll(player.getServer());
                     }
+                    syncToAll(player.getServer());
                 }
             }
         }
     }
 
-
-    private static void syncToAll(MinecraftServer server) {
-        PacketDistributor.sendToAllPlayers(new LostInFogClientTasks.SyncPacket(serverDay, serverTicksActive, serverCount1, serverCount2, serverCompleted, server.getPlayerCount(), serverHudActive));
+    public static void syncToAll(MinecraftServer server) {
+        PacketDistributor.sendToAllPlayers(new LostInFogClientTasks.SyncPacket(serverDay, serverTicksActive, serverCount1, serverCount2, serverOptCount, serverCompleted, serverOptCompleted, server.getPlayerCount(), serverHudActive));
     }
-
 
     private static String[] getPhrasesForDay(int day) {
         return switch (day) {
+            case 1 -> new String[]{
+                "It's dirty around here, maybe I should clear the cobwebs if I can",
+                "Just need to survive today, but clearing cobwebs would help"
+            };
             case 2 -> new String[]{
                 "Today I want to chop down a tree and mine some stone, 5 of each and 15 of each",
-                "Today it's worth chopping a tree and getting stone",
-                "I want to chop some wood and mine some stone",
-                "It would be nice to chop a tree and get stone"
+                "I should also clean the mossy bricks with a brush if possible"
             };
             case 3 -> new String[]{"Today I need to get 5 iron ore and 10 food"};
             case 4 -> new String[]{"Today it's dangerous to go outside"};
             case 5 -> new String[]{
-                "I think today is worth preparing for something?",
                 "We need to prepare today, maybe place some blocks",
-                "I should get ready for whatever is coming",
                 "Time to set up defenses and place blocks"
             };
             case 6 -> new String[]{"Find the radio in the house"};
@@ -326,6 +328,7 @@ public class LostInFogServerTasks {
 
     private static boolean checkTaskCompletion(int playerCount) {
         return switch (serverDay) {
+            case 1 -> serverTicksActive >= 24000;
             case 2 -> serverCount1 >= 5 * playerCount && serverCount2 >= 15 * playerCount;
             case 3 -> serverCount1 >= 5 * playerCount && serverCount2 >= 10 * playerCount;
             case 4 -> serverTicksActive >= 24000;
