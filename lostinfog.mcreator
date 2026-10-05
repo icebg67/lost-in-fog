@@ -1547,6 +1547,30 @@
           "src/main/resources/data/lostinfog/worldgen/structure/podval.json"
         ]
       }
+    },
+    {
+      "name": "Flash",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flash",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/recipe/flash.json"
+        ]
+      }
+    },
+    {
+      "name": "Fih",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fih",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lostinfog/recipe/fih.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1985,7 +2009,7 @@
       "advancements.day_9.descr": "gg ez",
       "advancements.day_2.descr": "Day 2 begins",
       "item.lostinfog.cannedfooditem": "Canned Fish",
-      "block.lostinfog.flashlight_hpr": "Flashlight HPR",
+      "block.lostinfog.flashlight_hpr": "Flashlight",
       "advancements.day_7.title": "June 25",
       "advancements.theend.descr": "gg ez",
       "block.lostinfog.vhodd": "Vhodd"
