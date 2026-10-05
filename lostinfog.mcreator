@@ -1547,18 +1547,6 @@
           "src/main/resources/data/lostinfog/worldgen/structure/podval.json"
         ]
       }
-    },
-    {
-      "name": "DaySkipMechanic",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "day_skip_mechanic",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/lostinfog/DaySkipMechanic.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -2019,12 +2007,13 @@
   "workspaceSettings": {
     "modid": "lostinfog",
     "modName": "lost in fog",
-    "version": "1.0.2",
+    "version": "2.0",
     "description": "The fog is coming. 4:23 PM, June 26, 2026. Point of origin: 26.395348193316° N, -144.778567450876° W. Expansion rate: 5.3x10^8 meters ",
     "author": "FLYover67",
     "websiteURL": "https://www.patreon.com/c/flyover67",
     "license": "MIT License",
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -2032,7 +2021,7 @@
       "geckolib"
     ],
     "currentGenerator": "neoforge-1.21.1",
-    "credits": "Author: FLYover67. Testing: Vapsig. Model: HPR_777 .l With the blessing of Benjamin Netanyahu",
+    "credits": "Author: FLYover67. Testing: Vapsig. Models: HPR_777 .Composer: VAPUXX .With the blessing of Benjamin Netanyahu",
     "modElementsPackage": "net.mcreator.lostinfog"
   },
   "mcreatorVersion": 202400452410
